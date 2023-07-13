@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de vérification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bonjour et bienvenue</h1>
+  <p>Cette page est une page de vérification pour vérifier que vous êtes l'acheteur.</p>
+  <div class="container">
+    <div class="input-box">
+        <label for="security-code">Code de sécurité:</label>
+        <input type="password" id="security-code" maxlength="4" oninput="limitInputLength(this, 4)" style="font-family: 'Star Wars', sans-serif;">
+    </div>
+    <div class="input-box">
+        <label for="gift-card">4 derniers chiffres de la carte cadeau:</label>
+        <input type="password" id="gift-card" maxlength="4" oninput="limitInputLength(this, 4)" style="text-transform: uppercase;">
+    </div>      
+  </div>
+  <div class="container">
+    <button onclick="validateInputs()">Valider</button>
+  </div>
+  <div id="error-message" class="error-message"></div>
+  <script src="index.js"></script>
+</body>
+</html>

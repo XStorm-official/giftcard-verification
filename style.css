@@ -1,0 +1,188 @@
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-box {
+       width: 80%;
+    }
+  }
+  
+  body {
+    background: linear-gradient(to right, #000000, #3d3d3d);
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .input-box {
+    border: 2px solid white;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+  }
+  
+  label {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    background: transparent;
+    color: white;
+  }
+  
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  button {
+    display: inline-block;
+    background-color: #09f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #0cf;
+  }
+  
+  .input-box {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 50% / 10%;
+  }
+  
+  .input-box input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+  }
+  input.error {
+    border-color: red;
+  }
+  
+  .input-box.vibrate {
+    animation: vibrate 0.3s linear;
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  .code-box {
+    border: 2px solid white;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+  }
+
+  .code-box p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .contact-button {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .contact-button:hover {
+    background-color: #0000ff;
+  }
+
+  .delete-button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+
+  .delete-button:hover {
+    background-color: #ff0000;
+  }
